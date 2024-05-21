@@ -1,0 +1,97 @@
+html{
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden  ;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+
+.container {
+    text-decoration:white;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.bigbox{
+    background-color: green;
+    /* padding: 170px; */
+    margin: 8px;
+    height: 350px;
+    width: 32%;
+    justify-content: space-around;
+}
+
+.smallbox{
+    background-color: green;
+    margin: 33px;
+    height: 100px;
+    width: 28%;
+    justify-content: space-around;
+    text-align: center;
+    align-content: center;
+  
+
+    
+}
+
+.smallbox a{
+    font-size: 32px;
+    text-decoration: none;
+    color: aqua;
+}
+.gridcontainer{
+    height: 575px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3 ,1fr);
+}
+
+.gridcontainer div{
+    position: relative;
+}
+
+.gridcontainer h3{
+    position: absolute;
+    top: 30px;
+    /* transform: translate(-50%, -50%); */
+}
+.gridcontainer p{
+    position: absolute;
+    top: 10px;
+}
+.gridcontainer a{
+    position: absolute;
+    top: 80px;
+    left: 1px;
+    text-decoration: none;
+    color: black;
+}
+.aboutcontainer {
+    text-align: center;
+    font-size: 25px;
+}
